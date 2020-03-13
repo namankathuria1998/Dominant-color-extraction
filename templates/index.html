@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		segmentation
+	</title>
+
+  <style type="text/css">
+    
+    body {
+
+         background:url(https://miro.medium.com/max/848/1*M9le42saJxWlOYyYvhKtPA.jpeg);
+         background-repeat: no-repeat;
+         background-size: cover;
+    }
+
+   #myh1 {
+
+       color: white;
+   }
+
+  </style>
+
+</head>
+<body >
+
+   <h1 id="myh1">DOMINANT COLOR EXTRACTION</h1> 
+   
+   <form method="POST" action="/"  enctype="multipart/form-data">
+   	 
+   	 <input type="file" name="myfile" placeholder="Enter Image">
+   	 <input type="text" name="mytext" placeholder="Enter no of colors" >
+   	 <input type="submit">
+
+   </form>
+     
+
+    {% if myno %}
+    <h3>Entered image is </h3>
+    <img src={{actualpath}}>
+
+    <h3>Final image is</h3>
+    <img src={{mynewpath}}>
+
+    {% endif %}
+
+</body>
+</html>
