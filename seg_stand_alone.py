@@ -6,8 +6,6 @@
 
 import cv2
 import matplotlib.pyplot as plt
-from datetime import datetime
-dateTimeObj = datetime.now()
 
 333
 
