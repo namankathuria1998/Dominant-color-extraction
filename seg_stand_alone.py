@@ -60,7 +60,7 @@ def convertimageactual(path,noofcolors,filename):
     
             
     new_image = cv2.cvtColor(new_image,cv2.COLOR_RGB2BGR) 
-    #cv2.imwrite("./static/new"+str(noofcolors)+filename,new_image)                 
+    cv2.imwrite("./static/new"+str(noofcolors)+filename,new_image)                 
 #    return new_image
     
 
