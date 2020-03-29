@@ -2,7 +2,6 @@ numpy
 pandas
 matplotlib
 opencv-python
-flask
 scikit-learn
 Click==7.0
 Flask==1.1.1
