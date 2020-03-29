@@ -14,4 +14,15 @@ Scipy
 #### Input an image and desired number of colours in the edited image.
 # Results
 
-![Screenshot](.jpg)
+
+## Image with 2 Colors 
+![Screenshot](2colors.png)
+
+
+## Image with 3 Colors 
+![Screenshot](3colors.png)
+
+
+## Image with 4 Colors 
+![Screenshot](4colors.png)
+
