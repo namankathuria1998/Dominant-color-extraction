@@ -1,6 +1,6 @@
 from flask import Flask,render_template,request
 import seg_stand_alone
-from datetime import datetime
+
 
 
 app = Flask(__name__)
