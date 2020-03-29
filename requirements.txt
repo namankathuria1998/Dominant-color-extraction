@@ -1,5 +1,7 @@
 numpy
 pandas
+render_template
+request
 matplotlib
 opencv-python
 scikit-learn
