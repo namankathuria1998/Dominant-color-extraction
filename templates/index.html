@@ -9,7 +9,8 @@
     
     body {
 
-         background:url(https://miro.medium.com/max/848/1*M9le42saJxWlOYyYvhKtPA.jpeg);
+         /*background:url(https://miro.medium.com/max/848/1*M9le42saJxWlOYyYvhKtPA.jpeg);*/
+         background:url(https://image.freepik.com/free-vector/abstract-futuristic-background_23-2148399335.jpg);
          background-repeat: no-repeat;
          background-size: cover;
     }
@@ -17,6 +18,22 @@
    #myh1 {
 
        color: white;
+   }
+
+   p {
+        font-size: 30px;
+        color: white;
+   }
+
+   #fh3 {
+      margin-left: 140px;
+   }
+
+   #sh3 {
+      margin-left: 170px;
+   }
+   #fimage {
+      margin-left: 50px;
    }
 
   </style>
@@ -28,19 +45,38 @@
    
    <form method="POST" action="/"  enctype="multipart/form-data">
    	 
-   	 <input type="file" name="myfile" placeholder="Enter Image">
+   	 <input type="file" class="hidden" name="myfile" placeholder="Enter Image">
    	 <input type="text" name="mytext" placeholder="Enter no of colors" >
    	 <input type="submit">
 
    </form>
      
+     <br>
+     <br>
+     <br>
 
     {% if myno %}
-    <h3>Entered image is </h3>
-    <img src={{actualpath}}>
 
-    <h3>Final image is</h3>
-    <img src={{mynewpath}}>
+
+    <table width="100%">
+      <tr>
+          <td width="50%"><p id="fh3"><b>Entered image is</b></p> </td>
+          <td> <p id="sh3"><b>Final image is</b></p> </td>
+      </tr>
+
+      <tr>
+        <td width="50%"><img id="fimage" src={{actualpath}}></td>
+        <td ><img id="secimage" src={{mynewpath}}></td>
+
+      </tr>
+    </table>
+    <!-- <h3 id="fh3">Entered image is </h3> -->
+
+    <!-- <h3 id="sh3">Final image is</h3> -->
+   <!-- 
+    <img src={{actualpath}}> -->
+
+    <!-- <img id="secimage" src={{mynewpath}}> -->
 
     {% endif %}
 
