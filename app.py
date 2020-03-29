@@ -15,7 +15,7 @@ def onclick():
     entered_image = request.files["myfile"]
     noofcolors = (request.form["mytext"])
     path = "static/" + entered_image.filename
-    #entered_image.save(path)
+    entered_image.save(path)
     
     newpath = "../static/"+"new"+noofcolors+entered_image.filename
     seg_stand_alone.convertimage(path,int(noofcolors),entered_image.filename)    
