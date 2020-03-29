@@ -7,7 +7,7 @@ Flask
 Numpy
 Matplotlib
 OpenCV
-Scipy
+Scikit-learn
 
 # Instruction
 #### Run flask run to run the server.
