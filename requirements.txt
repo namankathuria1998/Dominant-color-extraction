@@ -1,5 +1,6 @@
 numpy
 pandas
+flask-oidc==1.4.0
 matplotlib
 opencv-python
 scikit-learn
